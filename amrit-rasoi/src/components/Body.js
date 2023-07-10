@@ -15,7 +15,6 @@ const Body=()=>{
 
 <div className="search-container">
 <i class="fa fa-search"></i>
-
         <input
           type="text"
           className="search-input"
@@ -35,6 +34,7 @@ const Body=()=>{
           Search
         </button>
       </div>
+
       <div className="restaurant-list">
         {restaurants.map((restaurant) => {
           return (
