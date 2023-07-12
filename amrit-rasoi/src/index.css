@@ -12,66 +12,23 @@ body{
 .logo {
     width: 50px;
 }
-
 .header {
     display: flex;
-    top: 20px;
-  background-color: #1a1a1a;
-color: white;
-margin-top: 40px;
+    background-image: radial-gradient( circle farthest-corner at 17.1% 22.8%,  rgba(226,24,24,1) 0%, rgba(160,6,6,1) 90% );
+    color: white;
+    padding: 0.8rem;
     justify-content: space-between;
     border: 1px solid black;
-    font-family:
-  "IBM Plex Sans", "IBM Plex Sans Fallback", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-
-    
+    margin: 10px;
   }
   .logo-header{
-
+   margin-left: 20px;
   }
-  /* CSS for the SmallNavbar component */
-
-/* CSS for the SmallNavbar component */
-
-.small-navbar {
-  background-color: #3AA6B9;
-  padding: 10px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
-  font-family:
-  "IBM Plex Sans", "IBM Plex Sans Fallback", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.small-navbar ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-.small-navbar li {
-  margin: 0 10px;
-}
-
-.small-navbar a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-
-.small-navbar a:hover {
-  color: #555;
-}
-
   
   .nav-items ul {
     display: flex;
     gap: 2rem;
-    padding: 7px;
+    padding: 0;
   }
   
   .nav-items ul li {
@@ -99,71 +56,17 @@ margin-top: 40px;
     height: 70%;
     width: 100%;
   }
-
-/* CSS */
-.button-3 {
-  appearance: none;
-  background-color: #A78295;
-  border: 1px solid rgba(27, 31, 35, .15);
-  border-radius: 6px;
-  box-shadow: rgba(221, 231, 240, 0.1) 0 1px 0;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
-  padding: 6px 16px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-  white-space: nowrap;
-}
-
-.button-3:focus:not(:focus-visible):not(.focus-visible) {
-  box-shadow: none;
-  outline: none;
-}
-
-.button-3:hover {
-  background-color: #2c974b;
-}
-
-.button-3:focus {
-  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
-  outline: none;
-}
-
-.button-3:disabled {
-  background-color: #94d3a2;
-  border-color: rgba(27, 31, 35, .1);
-  color: rgba(255, 255, 255, .8);
-  cursor: default;
-}
-
-.button-3:active {
-  background-color: #298e46;
-  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
-}
-
 .restaurant-list{
     width:90%;
     height: 105%;
-    border-radius: 1rem;
+    border-radius: 5rem;
     margin:2rem  auto;
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-   background-color: #1a1a1a
-   ;
+    gap: 1rem;background-image: radial-gradient( circle farthest-corner at 17.1% 22.8%,  rgba(226,24,24,1) 0%, rgba(160,6,6,1) 90% );;
     border: 1px solid black;
-    color:white;
+    color: white;
 }
 .card {
     padding: 1rem;
@@ -191,7 +94,7 @@ margin-top: 40px;
 .Footer {
     text-align:center;
 
-    background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+    background-image: radial-gradient( circle farthest-corner at 17.1% 22.8%,  rgba(226,24,24,1) 0%, rgba(160,6,6,1) 90% );
     color:white;
     border: 1px solid black;
     margin: 10px;
@@ -201,7 +104,6 @@ margin-top: 40px;
 text-align: left;
 }
 .search-input {
-  margin-top: 20px;
     margin-left: 500px;
     font-size: 30px;
     border-radius: 10px;
@@ -228,12 +130,4 @@ text-align: left;
       margin-top: 20px;
       justify-content: center;
     }
-  }
-  .body-up{
-    
-  }
-  .body-img{
-    float: right;
-    height: 30%;
-    width: 30%;
   }
