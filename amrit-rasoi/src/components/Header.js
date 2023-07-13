@@ -10,7 +10,7 @@ const Title = () => (
 const Header = () => {
   return (
     <div className="header">
-      <h2 className="logo-header">Amrit-Rasoi</h2>
+      <h1 className="logo-header">अमृत -Rasoi</h1>
       <Title />
       <div className="nav-items">
         
