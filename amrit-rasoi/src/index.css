@@ -7,6 +7,7 @@ body {
 
 .logo {
   width: 50px;
+  
 }
 
 .header {
@@ -24,6 +25,7 @@ body {
 
 .logo-header {
   margin-left: 20px;
+  background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
 }
 
 .nav-items ul {
@@ -31,6 +33,7 @@ body {
   gap: 3rem;
   padding: 10px;
   align-items: center;
+  
 }
 
 .nav-items ul li {
@@ -142,18 +145,73 @@ margin-left: 450px;
   justify-content: space-between;
   width: 100%;
   max-width: 300px;
-  border-radius: 50%;
+  border-radius: 10%;
   margin-left: 65px;
   margin-right: auto;
   margin-top: 2rem;
   transition: transform 0.3s;
 }
+/* ... previous styles ... */
+.react-toggle-track {
+  background-color: #888;
+}
+
+.react-toggle-thumb {
+  background-color: #fff;
+}
+
+.react-toggle--checked .react-toggle-track {
+  background-color: #000;
+}
+
+.react-toggle--checked .react-toggle-thumb {
+  background-color: #fff;
+}
+
+.dark-mode-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 2rem;
+}
+
+.fas.fa-moon {
+  font-size: 24px;
+  color: #e42e2e;
+  transition: color 0.3s ease;
+}
+
+.moon-active {
+  color: #fff;
+}
+.react-switch {
+  vertical-align: middle;
+}
+
+.react-switch .react-switch-bg {
+  box-shadow: none !important;
+}
+
+.react-switch .react-switch-handle {
+  background-color: #fff !important;
+  box-shadow: none !important;
+}
+
+.react-switch .react-switch-handle:before {
+  background-color: #000 !important;
+}
+
+.react-switch .react-switch-handle:active {
+  transform: translateX(2px);
+}
+
+
 .bodies-img1 {
   height: auto;
   justify-content: space-between;
   width: 100%;
   max-width: 300px;
-  border-radius: 50%;
+  border-radius: 10%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
@@ -164,7 +222,7 @@ margin-left: 450px;
   width: 100%;
   justify-content: space-between;
   max-width: 300px;
-  border-radius: 50%;
+  border-radius: 10%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
@@ -175,7 +233,7 @@ margin-left: 450px;
   height: auto;
   width: 100%;
   max-width: 300px;
-  border-radius: 50%;
+  border-radius: 10%;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
@@ -362,4 +420,70 @@ margin-left: 450px;
     height: 86px;
     line-height: 88px;
   }
+}
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }

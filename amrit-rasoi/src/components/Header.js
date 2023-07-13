@@ -1,28 +1,38 @@
+import React, { useEffect, useState } from "react";
+import DarkModeToggle from "./DarkModeToggle";
 
-// Title component for display logo
-const Title = () => (
-  <a href="/">
-  
-  </a>
-);
-
-// Header component for header section: Logo, Nav Items
 const Header = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode((prevMode) => !prevMode);
+  };
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    setIsDarkMode(savedTheme === "dark");
+  }, []);
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add("dark-mode");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark-mode");
+      localStorage.setItem("theme", "light");
+    }
+  }, [isDarkMode]);
+
   return (
-    <div className="header">
+    <div className={`header ${isDarkMode ? "dark-mode" : ""}`}>
       <h1 className="logo-header">अमृत -Rasoi</h1>
-      <Title />
       <div className="nav-items">
-        
         <ul>
-        
           <li>Home</li>
           <li>About</li>
           <li>Contact</li>
           <li>Services</li>
-          <li>
-            <i className="fa-solid fa-cart-shopping"></i>
-          </li>
+          <DarkModeToggle isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
         </ul>
       </div>
     </div>
