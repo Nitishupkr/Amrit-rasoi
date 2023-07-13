@@ -11,10 +11,11 @@ const Bodies = () => {
   return (
     <div className="Bodies">
       <div className="running-text">
-        <h1 className="main-heading">Delicious Foods</h1>
+        <h1 className="main-heading">DELICIOUS FOOD</h1>
       </div>
       <div className="running-text">
         <h2 className="main-heading2">Order food from favourite restaurants near you.</h2>
+        <button class="button-49" role="button">Learn More</button>
       </div>
       <h3 className="main-heading1">Ahmedabad Bangalore Chennai Delhi Gurgaon Hyderabad Kolkata Mumbai<br/> Pune & more.</h3>
       <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80" alt="img" className="bodies-img" />
