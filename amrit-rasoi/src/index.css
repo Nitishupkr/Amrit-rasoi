@@ -13,7 +13,7 @@ body {
 .header {
   display: flex;
   color: white;
-  background-color: #1a1a1a;
+  background-color: #000000;
   padding: 0.8rem;
   font-family:"IBM Plex Sans", "IBM Plex Sans Fallback", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
@@ -25,7 +25,7 @@ body {
 
 .logo-header {
   margin-left: 20px;
-  background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+  background: linear-gradient(45deg, transparent 5%, #00b39f 5%);
 }
 
 .nav-items ul {
@@ -73,7 +73,8 @@ body {
   justify-content: center;
   border: 1px solid black;
   color: white;
-  background-color: #1a1a1a;
+  background-color: #000000
+  ;
   font-family:"IBM Plex Sans", "IBM Plex Sans Fallback", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 }
@@ -136,21 +137,11 @@ margin-left: 450px;
 }
 
 .Bodies {
-  background-color: #1a1a1a;
+  background-color: #000000;
   justify-content: space-between;
 }
 
-.bodies-img {
-  height: auto;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 300px;
-  border-radius: 10%;
-  margin-left: 65px;
-  margin-right: auto;
-  margin-top: 2rem;
-  transition: transform 0.3s;
-}
+
 /* ... previous styles ... */
 .react-toggle-track {
   background-color: #888;
@@ -206,53 +197,7 @@ margin-left: 450px;
 }
 
 
-.bodies-img1 {
-  height: auto;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 300px;
-  border-radius: 10%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2rem;
-  transition: transform 0.3s;
-}
-.bodies-img2 {
-  height: auto;
-  width: 100%;
-  justify-content: space-between;
-  max-width: 300px;
-  border-radius: 10%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2rem;
-  padding: auto;
-  transition: transform 0.3s;
-}
-.bodies-img3 {
-  height: auto;
-  width: 100%;
-  max-width: 300px;
-  border-radius: 10%;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: space-between;
-  margin-top: 2rem;
-  transition: transform 0.3s;
-}
 
-.bodies-img:hover {
-  transform: scale(1.1);
-}
-.bodies-img1:hover {
-  transform: scale(1.1);
-}
-.bodies-img2:hover {
-  transform: scale(1.1);
-}
-.bodies-img3:hover {
-  transform: scale(1.1);
-}
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
@@ -273,16 +218,11 @@ margin-left: 450px;
     justify-content: center;
     font-size: 1rem;
   }
-
-  .bodies-img {
-    margin-left: 0;
-    margin-top: 1rem;
-  }
 }
 .main-heading{
  font-size: 71px;
  line-height: 81px;
- background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+ background: linear-gradient(45deg, transparent 5%, #00b39f 5%);
  color: #fff;
  /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(249,232,51,1) 0%, rgba(250,196,59,1) 100.2% ); */
  text-align: start;
@@ -329,7 +269,7 @@ margin-left: 450px;
   line-height: 78px;
   font-size: 15px;
   font-family: 'Bebas Neue', sans-serif;
-  background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+  background: linear-gradient(45deg, transparent 5%, #00b39f 5%);
   border: 0;
   color: #fff;
   letter-spacing: 3px;
@@ -486,19 +426,4 @@ margin-left: 450px;
   left: 0;
   top: 50px;
   border-radius: 10px;
-}
-.video-container {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* Adjust the height as needed */
-  overflow: hidden;
-}
-
-.video-container video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
